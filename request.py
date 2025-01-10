@@ -1,4 +1,3 @@
-import os.path
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 hostName = "localhost"
@@ -10,14 +9,15 @@ class MyServer(BaseHTTPRequestHandler):
 
     def do_GET(self):
         """Метод для обработки входящих GET-запросов"""
+        path = self.path
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
 
         # чтение файла с кодом страницы "Контакты"
-        with open(os.path.join(os.path.dirname(__file__), "pages", "contacts.html"), encoding="utf-8") as f:
-            content = f.read()
-        self.wfile.write(bytes(content, "utf-8"))
+        with open(path, encoding="utf-8") as file:
+            content = file.read()
+            self.wfile.write(bytes(content, "utf-8"))
 
 
 if __name__ == "__main__":
