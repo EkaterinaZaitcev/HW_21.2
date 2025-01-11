@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import os.path
 import time
 
 hostName = "localhost"
@@ -15,8 +16,12 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_response(200) # Отправка кода ответа
         self.send_header("Content-type", "text/html")
         """ Отправка типа данных, который будет передаваться"""
-        self.end_headers()  # Завершение формирования заголовков ответа
-        self.wfile.write(bytes("{'message': 'OK'}", "utf-8"))  # Тело ответа
+        self.end_headers()
+
+        # чтение файла с кодом страницы "Контакты"
+        with open(os.path.join(os.path.dirname(__file__), "pages", "contacts.html"), encoding="utf-8") as f:
+            content = f.read()
+        self.wfile.write(bytes(content, "utf-8"))
 
 if __name__ == "__main__":
 
