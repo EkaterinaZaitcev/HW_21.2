@@ -18,36 +18,52 @@
         .block {
             background-color: #white;
             padding: 0px;
-            position: absolut;
-            top: 140px;
+            position: absolute;
+            top: 10px;
             left: 140px;
             margin: 40px;
             }
     </style>>
 </head>
 <body>
-<div class="row ms-0">
-    <div class="col-2 text-bg-dark ps-3 sidebar">
-        <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Меню
-        </a>
-        <hr>
-        <button type="button" class="btn btn-dark w-100 text-start">Главная</button><br>
-        <button type="button" class="btn btn-dark w-100 text-start">Категории</button><br>
-        <button type="button" class="btn btn-dark w-100 text-start">Заказы</button><br>
-        <button type="button" class="btn btn-dark w-100 text-start">Контакты</button><br>
-        <hr class="sticky-bottom">
-        <div class="dropdown fixed-bottom">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Пользователь</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Профиль</a></li>
-                <li><a class="dropdown-item" href="#">Выход</a></li>
-            </ul>
+<div class="text-center col-2 sidebar">
+    <div class="col-2 text-bg-dark ps-3">
+        <nav class="navbar navbar-dark bg-dark align-items-start" style="Height: 100%">
+            <a class="navbar-brand" href="#">
+                <img src="/src/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Меню
+            </a>
+                <ul><hr class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Категория</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="dropdown open">
+                    <li class="nav-item navbar fixed-bottom ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Пользователь
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
+
     </div>
-    <div class="col-10">
+    <div class="col-10 block">
         <div class="row mt-5">
             <div class="col-12">
                 <h1 class="text-center">Контакты</h1>
