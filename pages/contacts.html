@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .sidebar {
             background-color: #212528;
@@ -26,31 +25,32 @@
     </style>>
 </head>
 <body>
-<div class="text-center col-2 sidebar">
-    <div class="col-2 text-bg-dark ps-3">
-        <nav class="navbar navbar-dark bg-dark align-items-start" style="Height: 100%">
-            <a class="navbar-brand" href="#">
-                <img src="/src/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Меню
-            </a>
+<div class="row cols-1">
+    <div class="text-center col-2 sidebar">
+        <div class="col-2 text-bg-dark ps-3">
+            <nav class="navbar navbar-dark bg-dark align-items-start" style="Height: 100%">
+                <a class="navbar-brand" href="#">
+                    <img src="/src/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Меню
+                </a>
                 <ul><hr class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        <a class="nav-link active" aria-current="page" href="main_page.html">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Категория</a>
+                        <a class="nav-link" href="category.html">Категория</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Заказы</a>
+                        <a class="nav-link" href="orders.html">Заказы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link" href="contact.html">Контакты</a>
                     </li>
                 </ul>
                 <ul class="dropdown open">
                     <li class="nav-item navbar fixed-bottom ">
                         <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Пользователь
+                                Пользователь
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Профиль</a></li>
@@ -61,40 +61,39 @@
                 </ul>
             </nav>
         </div>
-
     </div>
-    <div class="col-10 block">
-        <div class="row mt-5">
-            <div class="col-12">
-                <h1 class="text-center">Контакты</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="card p-4 w-75 ms-5 mt-5">
-                    <form>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Имя</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
-                        </div>
-                        <div class="mb-3 form-text">
-                            <label class="form-label">Сообщение</label><br>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                          <button type="submit" class="btn btn-primary">Отправить</button>
-                    </form>
+        <div class="col-10 block">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h1 class="text-center">Контакты</h1>
                 </div>
             </div>
-            <div class="col-6">
-                <h3 class="mt-5">Наши контакты</h3>
-                <p class="me-5 fs-5"> "Обращение — это слово или словосочетание, к которому обращаются при общении. В русском языке оно выделяется запятыми и может располагаться в любом месте предложения. Учтите, что при обращении требуется употребление правильной формы вежливости. Ваш пример описывает эти правила замечательно." </p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card p-4 w-75 ms-5 mt-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Имя</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="mb-3 form-text">
+                                <label class="form-label">Сообщение</label><br>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                              <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h3 class="mt-5">Наши контакты</h3>
+                    <p class="me-5 fs-5"> "Обращение — это слово или словосочетание, к которому обращаются при общении. В русском языке оно выделяется запятыми и может располагаться в любом месте предложения. Учтите, что при обращении требуется употребление правильной формы вежливости. Ваш пример описывает эти правила замечательно." </p>
+                </div>
             </div>
         </div>
-    </div>
 </div>
 
 </body>
