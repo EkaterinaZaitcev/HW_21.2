@@ -37,7 +37,7 @@ if __name__ == "__main__":
     print("Server started http://%s:%s" % (hostName, serverPort))
 
     try:
-        """ Cтарт веб-сервера в бесконечном цикле прослушивания входящих запросов"""
+        """Cтарт веб-сервера в бесконечном цикле прослушивания входящих запросов"""
         webServer.serve_forever()
     except KeyboardInterrupt:
 
