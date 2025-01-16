@@ -31,6 +31,7 @@ class MyServer(BaseHTTPRequestHandler):
                 content = f.read()
             self.wfile.write(content)
 
+
 if __name__ == "__main__":
 
     webServer = HTTPServer((hostName, serverPort), MyServer)
