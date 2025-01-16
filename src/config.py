@@ -6,5 +6,5 @@ PAGE_MAPPER = {
     '/': ['pages', 'main_page.html'],
     '/contacts/': ['pages', 'contacts.html'],
     '/category/': ['pages', 'category.html'],
-    '/orders/': ['pages', 'category.html'],
+    '/orders/': ['pages', 'orders.html'],
 }

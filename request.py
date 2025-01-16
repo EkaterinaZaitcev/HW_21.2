@@ -18,9 +18,9 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "text/html")
         self.end_headers()
         # чтение файла с кодом страницы "Контакты"
-        with open(os.path.join(os.path.dirname(__file__), "pages", "contacts.html"), encoding="utf-8") as f:
+        """with open(os.path.join(os.path.dirname(__file__), "pages", "contacts.html"), encoding="utf-8") as f:
             content = f.read()
-            self.wfile.write(bytes(content, "utf-8"))
+            self.wfile.write(bytes(content, "utf-8"))"""
 
         if self.path not in PAGE_MAPPER:
             self.send_response(404)
